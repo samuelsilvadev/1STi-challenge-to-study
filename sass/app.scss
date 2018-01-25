@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: orange;    
+}
+
+.color {
+    &--white {
+        color: #ffffff;
+    }
+}
+
+.main {    
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+
+    &__title {     
+        font-size: 3rem;
+        font-weight: bolder;
+        padding-top: 0.7em;
+    }
+}
+
+
+.section__form {
+    position: relative;
+    top: 3em;
+    height: 6em;
+    border-bottom: 1px solid #ffffff;
+}
+
+.form {
+
+    text-align: center;
+
+    &__search-city {
+        
+        width: 80%;
+        height: 3em;        
+        border: none;
+        margin-right: auto;
+        font-size: 1rem;
+        font-weight: 100;        
+        padding: 1rem;
+    }
+}
+
+.section__capitals {
+    position: relative;
+    top: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
