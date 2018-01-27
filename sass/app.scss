@@ -1,3 +1,6 @@
+$fa-font-path:"../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -51,6 +54,13 @@ body {
         font-size: 1rem;
         font-weight: 100;        
         padding: 1rem;
+        
+        &::after {
+            content: "\f152";
+            
+            
+            color: #000000;
+        }        
     }
 }
 
@@ -59,4 +69,17 @@ body {
     top: 5em;
     padding-left: 3em;
     padding-right: 3em;
+}
+
+.capitals {
+    display: flex;
+}
+
+.capital {
+    width: 100%;    
+}
+
+.table__title {
+    font-weight: 100;
+    font-size: 0.7rem;
 }
