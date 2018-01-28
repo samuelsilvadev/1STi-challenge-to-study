@@ -1,6 +1,3 @@
-$fa-font-path:"../node_modules/font-awesome/fonts";
-@import "../node_modules/font-awesome/scss/font-awesome";
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -29,11 +26,14 @@ body {
 
     text-align: center;
 
-    &__title {     
-        font-size: 3.8rem;
+    &__title {             
         font-weight: bolder;
         padding-top: 1em;
-    }
+
+        &--bigger {     
+            font-size: 3.8rem;
+        }
+    }    
 }
 
 .section__form {
@@ -57,24 +57,23 @@ body {
         font-weight: 100;        
         padding: 1rem;
         
-        &::after {
-            content: "\f152";
-            
-            
-            color: #000000;
-        }        
+        background-image: url('/images/icons/searchicon.png');
+        background-position: 98% 50%;
+        background-repeat: no-repeat;
+        background-size: 5%;
     }
 }
 
 .section__capitals {
     position: relative;
     top: 5em;
-    padding-left: 3em;
+    padding-left: 8em;
     padding-right: 3em;
 }
 
 .capitals {
     display: flex;
+    width: 80%;
 }
 
 .capital {
