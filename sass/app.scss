@@ -6,9 +6,11 @@
 }
 
 body {
-    background: #fc4a1a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(255, 179, 0);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, rgb(255, 179, 0), rgb(255, 132, 0));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, rgb(255, 179, 0), rgb(255, 132, 0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    overflow: hidden;
 }
 
 .color {
@@ -32,6 +34,10 @@ body {
 
         &--bigger {     
             font-size: 3.8rem;
+        }
+
+        &--medium {
+            font-size: 2rem;
         }
     }    
 }
@@ -74,6 +80,7 @@ body {
 .capitals {
     display: flex;
     width: 80%;
+    margin-top: 1rem;
 }
 
 .capital {
@@ -85,6 +92,7 @@ body {
     &__title {
         font-weight: 100;
         font-size: 0.7rem;
+        color: #584242;
     }
 
     &__body {
