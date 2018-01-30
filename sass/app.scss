@@ -1,9 +1,5 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-}
+@import "_general";
+@import "_helpers";
 
 body {
     background: rgb(255, 179, 0);  /* fallback for old browsers */
@@ -11,12 +7,6 @@ body {
     background: linear-gradient(to top, rgb(255, 179, 0), rgb(255, 132, 0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
     overflow: hidden;
-}
-
-.color {
-    &--white {
-        color: #ffffff;
-    }
 }
 
 .main {    
@@ -40,6 +30,16 @@ body {
             font-size: 2rem;
         }
     }    
+}
+
+.card__time {
+    background-color: #fff3e4;
+    width: 70%;
+    height: 237px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section__form {
@@ -77,8 +77,7 @@ body {
     padding-right: 3em;
 }
 
-.capitals {
-    display: flex;
+.capitals {    
     width: 80%;
     margin-top: 1rem;
 }
