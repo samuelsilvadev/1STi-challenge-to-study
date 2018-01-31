@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,78 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="./dist/css/app.css" rel="stylesheet">
 </head>
+
 <body>
     <main class="main">
         <section>
             <header class="header">
                 <h1 class="header__title header__title--bigger color--white">Previsão do tempo</h1>
             </header>
+            <div class="card__time">
+                <div class="display--flex">
+                    <h3 class="card__time__title">Niterói, Rj - Brasil</h3>
+                    <span class="color--dark-orange">X</span>
+                </div>
+                <div>
+                    <h1 class="card__time__forecast">20ºC Nublado</h1>
+                </div>
+                <div class="card__time__options display--flex">
+                    <div>
+                        <span class="text--bold">16º</span>
+                        <span class="text--bold">25º</span>
+                    </div>
+                    <div>
+                        <span>Sensação</span>
+                        <span class="text--bold">19ºC</span>
+                    </div>
+                    <div>
+                        <span>Vento</span>
+                        <span class="text--bold">18km/h</span>
+                    </div>
+                    <div>
+                        <span>Humidade</span>
+                        <span class="text--bold">89%</span>
+                    </div>
+                </div>
+                <hr class="card__time__separator">
+                <div class="card__time__days display--flex">
+                    <div>
+                        <h4>Terça</h4>
+                        <div class="color--dark-orange">
+                            <span>18º</span>
+                            <span>26º</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Quarta</h4>
+                        <div class="color--dark-orange">
+                            <span>18º</span>
+                            <span>26º</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Quinta</h4>
+                        <div class="color--dark-orange">
+                            <span>18º</span>
+                            <span>26º</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Sexta</h4>
+                        <div class="color--dark-orange">
+                            <span>18º</span>
+                            <span>26º</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Sábado</h4>
+                        <div class="color--dark-orange">
+                            <span>18º</span>
+                            <span>26º</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="section__form">
             <form class="form">
@@ -24,7 +91,7 @@
             <header>
                 <h3 class="header__title--medium color--white">Capitais</h3>
             </header>
-            <div class="capitals">
+            <div class="capitals display--flex">
                 <div class="capital capitals__left">
                     <table>
                         <thead>
@@ -98,7 +165,7 @@
                                 <td>15°</td>
                                 <td>Juazeiro</td>
                             </tr>
-                          
+
                         </tbody>
                     </table>
                 </div>
@@ -106,4 +173,5 @@
         </section>
     </main>
 </body>
+
 </html>
