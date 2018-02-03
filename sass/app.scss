@@ -1,3 +1,4 @@
+@import "./font-awesome.min.css";
 @import "_general";
 @import "_helpers";
 
@@ -150,25 +151,55 @@ body {
 }
 
 
-.element__x {
+.element {
 
-    &:before{
-        content: '';
-        display: inline-block;
-        width: 2px;
-        height: 15px;
-        background-color: #ff8500;
-        transform: rotate(135deg);
+    &__arrow {
+
+        &__down {
+            content: '';
+            display: inline-block;
+            width: 2px;
+            height: 15px;
+            background-color: #ff8500;
+            position: relative;
+
+            &:before{
+                content: '';
+                display: inline-block;
+                width: 2px;
+                height: 10px;
+                background-color: #ff8500;
+                transform: rotate(135deg);
+                position: relative;
+                top: 5px;
+
+            }
+        }
+
+        &__up {
+
+        }
     }
-    
-    &:after{
-        content: '';
-        display: inline-block;
-        width: 2px;
-        height: 15px;
-        background-color: #ff8500;
-        position: relative;
-        top: -22px;
-        transform: rotate(45deg);
+
+    &__x {
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 2px;
+            height: 15px;
+            background-color: #ff8500;
+            transform: rotate(135deg);
+        }
+
+        &:after{
+            content: '';
+            display: inline-block;
+            width: 2px;
+            height: 15px;
+            background-color: #ff8500;
+            position: relative;
+            top: -22px;
+            transform: rotate(45deg);
+        }
     }
 }
