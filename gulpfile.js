@@ -16,6 +16,7 @@ const
 
 const _inputFilesScss = './sass/**/*.scss';
 const _outputFilesCss = './dist/css/';
+const _outputFilesFonts = './dist/fonts';
 
 const _inputFilesJs = './js/**/*.js';
 const _outputFilesJs = './dist/js/';
@@ -40,14 +41,13 @@ gulp.task('prefixe', () => {
         .pipe(gulp.dest(_outputFilesCss));
 });
 
-
 gulp.task('imagemin', () => {
     gulp.src(_inputImages)
         .pipe(imageMin())
         .pipe(gulp.dest(_outputImages))
 });
 
-gulp.task('serve', ['sass'], () => {
+gulp.task('serve', ['sass', 'copy-fonts'], () => {
 
     browserSync.init({
         server: {
@@ -90,10 +90,18 @@ gulp.task('clean', () => {
 });
 
 gulp.task('build:prod', () => {
-    runSequence('clean', 'browserify', 'babel', 'compress', 'imagemin', () => { });
+    runSequence('clean', 'browserify', 'babel', 'compress', 'imagemin', 'copy-fonts', () => { });
 });
 
-
 gulp.task('build:dev', () => {
-    runSequence('clean', 'browserify', 'imagemin', () => { });
+    runSequence('clean', 'browserify', 'imagemin', 'copy-fonts', () => { });
+});
+
+gulp.task('copy-fonts', () => {
+    gulp.src('node_modules/font-awesome/fonts/**')
+        .pipe(gulp.dest(_outputFilesFonts));
+
+    gulp.src('node_modules/font-awesome/css/**')
+        .pipe(gulp.dest(_outputFilesCss));
+
 });
