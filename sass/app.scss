@@ -203,3 +203,40 @@ body {
         }
     }
 }
+
+@media (max-width: 400px) {
+
+    * {
+        font-size: 12px;
+    }
+
+    .hide--little-screen {
+        display: none;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .header {
+        text-align: left;        
+    }
+
+    .capitals {
+        flex-direction: column;
+    }
+
+    .section__capitals {
+        padding-left: 1.5rem;
+    }
+
+    .table__body > tr > td{
+        font-size: 1.4rem;
+        line-height: 3rem;
+    }
+
+    .form__search-city {
+        width: 100%;
+    }
+    
+}
