@@ -204,7 +204,7 @@ body {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 
     * {
         font-size: 12px;
@@ -237,6 +237,21 @@ body {
 
     .form__search-city {
         width: 100%;
+    }    
+}
+
+
+@media (min-width: 481px) and (max-width: 767px){
+
+    * {
+        font-size: 14px;
     }
-    
+
+    .main {
+        width: 90%;
+    }
+
+    .form__search-city {
+        width: 80%;
+    }    
 }
