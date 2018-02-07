@@ -4,7 +4,8 @@
   "description": "This project is a copy of [1STi](https://github.com/1STi/desafio-frontend/blob/master/README.md), I'm just doing this to study and better my skills.",
   "main": "app.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "gulp serve"
   },
   "repository": {
     "type": "git",
