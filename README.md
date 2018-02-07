@@ -4,7 +4,9 @@ This project is a copy of [1STi](https://github.com/1STi/desafio-frontend/blob/m
 
 ## How to install
 
-...
+- [sudo] npm install -g gulp
+- npm install
+- npm start 
 
 ## Contacts
 
@@ -14,4 +16,4 @@ This project is a copy of [1STi](https://github.com/1STi/desafio-frontend/blob/m
 
 ## License
 
-[MIT](https://github.com/samuelsilvadev/1STi-challenge-to-study/blob/master/LICENSE)
+Samuel Silva &copy; [MIT](https://github.com/samuelsilvadev/1STi-challenge-to-study/blob/master/LICENSE)
