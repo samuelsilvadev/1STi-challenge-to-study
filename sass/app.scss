@@ -175,6 +175,9 @@ body {
     }
 }
 
+
+/* Begin media queries */
+
 @media (max-width: 480px) {
     * {
         font-size: 12px;
@@ -201,6 +204,11 @@ body {
     .form__search-city {
         width: 100%;
     }
+    .card__time {
+        width: 112%;
+        position: relative;
+        left: -18px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -216,8 +224,10 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-
     .section__capitals {
         padding-left: 1.5rem;
-    }   
+    }
+    .card__time {
+        width: 100%;
+    }
 }
