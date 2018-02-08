@@ -181,6 +181,10 @@ body {
 @media (max-width: 480px) {
     * {
         font-size: 12px;
+        overflow: auto;
+    }
+    body {
+        height: auto;
     }
     .hide--little-screen {
         display: none;
@@ -214,6 +218,10 @@ body {
 @media (min-width: 481px) and (max-width: 767px) {
     * {
         font-size: 14px;
+        overflow: auto;
+    }
+    body {
+        height: auto;
     }
     .main {
         width: 90%;
