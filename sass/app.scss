@@ -1,7 +1,7 @@
 @import "./font-awesome.min.css";
 @import "_general";
 @import "_helpers";
-body {
+html {
     /* fallback for old browsers */
     background: rgb(255, 179, 0);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -179,8 +179,9 @@ body {
 /* Begin media queries */
 
 @media (max-width: 480px) {
-    * {
+    html {
         font-size: 12px;
+        height: auto;
         overflow: auto;
     }
     body {
@@ -201,6 +202,12 @@ body {
     }
     .section__capitals {
         padding-left: 1.5rem;
+        height: 46rem;
+        width: 100%;
+        & .capitals {
+            width: inherit;
+            height: 23rem;
+        }
     }
     .table__body>tr>td {
         font-size: 1.4rem;
@@ -219,14 +226,13 @@ body {
 @media (min-width: 481px) and (max-width: 767px) {
     * {
         font-size: 14px;
-        overflow: auto;
     }
-    body {
-        height: auto;
+    html {
+        overflow: auto;
     }
     .main {
         width: 90%;
-        overflow: hidden;
+        overflow: auto;
     }
     .form__search-city {
         width: 80%;
