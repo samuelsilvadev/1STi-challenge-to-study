@@ -1,5 +1,6 @@
 /** 
  * constant to handle with codes came from weather API
+ * language: EN
  */
 const conditionsCode = {
     0: 'tornado',
@@ -50,7 +51,65 @@ const conditionsCode = {
     45:	'thundershowers',
     46:	'snow showers',
     47:	'isolated thundershowers',
-    3200:	'not available'
+    3200: 'not available'
 };
 
-module.exports = conditionsCode;
+/** 
+ * constant to handle with codes came from weather API
+ * language: PT
+ */
+const conditionsCodePT = {
+    0: 'Tornado',
+    1: 'Tempestade tropical',
+    2: 'Furacão',
+    3: 'Tempestades severas',
+    4: 'Trovoadas',
+    5: 'Chuva e neve',
+    6: 'Chuva e granizo',
+    7: 'Neve e granizo',
+    8: 'Garoa com neve',
+    9: 'Garoa',
+    10:	'Chuva com neve',
+    11:	'Chuva Forte',
+    12:	'Chuva Forte',
+    13:	'Flocos de neve',
+    14:	'Nevascas leves',
+    15:	'Nevascas Fortes',
+    16:	'Neve',
+    17:	'Granizo',
+    18:	'Granizo',
+    19:	'Poeira',
+    20:	'Nebuloso',
+    21:	'Neblina',
+    22:	'Esfumaçado',
+    23:	'blustery',
+    24:	'Ventoso',
+    25:	'Frio',
+    26:	'Nublado',
+    27:	'Noite predominantemente nublada',
+    28:	'Dia predominantemente nublado',
+    29:	'Noite parcialmente nublada',
+    30:	'Dia parcialmente nublado',
+    31:	'Noite limpa',
+    32:	'Ensolarado',
+    33:	'Noite clara',
+    34:	'Dia claro',
+    35:	'Chiva e granizo',
+    36:	'Quente',
+    37:	'Tempestades isoladas',
+    38:	'Tempestades dispersas',
+    39:	'Tempestades dispersas',
+    40:	'Chuvas dispersos',
+    41:	'Neve pesada',
+    42:	'Nevadas dispersas',
+    43:	'Neve pesada',
+    44:	'Parcialmente nublado',
+    45:	'Trovoadas',
+    46:	'Chuvas de neve',
+    47:	'Trovoadas isoladas',
+    3200: 'Não disponível'
+};
+
+
+exports.conditionsCode = conditionsCode;
+exports.conditionsCodePT = conditionsCodePT;
