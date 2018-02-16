@@ -1,3 +1,6 @@
+/** 
+ * constant to handle with codes came from weather API
+ */
 const conditionsCode = {
     0: 'tornado',
     1: 'tropical storm',
