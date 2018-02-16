@@ -3,7 +3,7 @@
 window.onload = (function () {
     
     const Utils = require('./helpers');
-    const conditionsCode = require('./conditionsCodes');
+    const conditionsCode = require('./conditionsCodes').conditionsCodePT;
     const week = require('./weekDays');
 
     const END_POINT = 'https://query.yahooapis.com/v1/public/yql';
