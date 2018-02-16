@@ -38,76 +38,40 @@
             </header>
             <div class="card__time display--none">
                 <div class="display--flex card__time__header">
-                    <h3 class="card__time__title">Niterói, Rj - Brasil</h3>
+                    <h3 class="card__time__title"></h3>
                     <span>
                         <i class="fa fa-close color--dark-orange"></i>
                     </span>
                 </div>
                 <div>
-                    <h1 class="card__time__forecast">20ºC Nublado</h1>
+                    <h1 class="card__time__forecast"></h1>
                 </div>
                 <div class="card__time__options display--flex">
                     <div>
                         <span class="text--bold">
                             <i class="fa fa-arrow-down color--dark-orange"></i>
-                            16º
+                            <span id="lowTime">0</span>
                         </span>
                         <span class="text--bold">
                             <span class="fa fa-arrow-up color--dark-orange"></span>
-                            25º
+                            <span id="highTime">0</span>
                         </span>
                     </div>
                     <div>
                         <span>Sensação</span>
-                        <span class="text--bold">19ºC</span>
+                        <span id="sensation" class="text--bold"></span>
                     </div>
                     <div>
                         <span>Vento</span>
-                        <span class="text--bold">18km/h</span>
+                        <span id="wind" class="text--bold"></span>
                     </div>
                     <div>
                         <span>Humidade</span>
-                        <span class="text--bold">89%</span>
+                        <span id="humidity" class="text--bold"></span>
                     </div>
                 </div>
                 <hr class="card__time__separator">
-                <div class="card__time__days display--flex">
-                    <div>
-                        <h4>Terça</h4>
-                        <div class="color--dark-orange">
-                            <span>18º</span>
-                            <span>26º</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Quarta</h4>
-                        <div class="color--dark-orange">
-                            <span>18º</span>
-                            <span>26º</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Quinta</h4>
-                        <div class="color--dark-orange">
-                            <span>18º</span>
-                            <span>26º</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Sexta</h4>
-                        <div class="color--dark-orange">
-                            <span>18º</span>
-                            <span>26º</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Sábado</h4>
-                        <div class="color--dark-orange">
-                            <span>18º</span>
-                            <span>26º</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="card__time__days display--flex"></div>
             </div>
         </section>
         <section class="section__form">
@@ -143,8 +107,6 @@
                             </tr>
                         </thead>
                         <tbody id="tbodyRight" class="table__body">
-
-
                         </tbody>
                     </table>
                 </div>
@@ -152,7 +114,7 @@
         </section>
     </main>
 
-    <script src="./js/app.js"></script>
+    <script src="./dist/js/bundle.js" defer></script>
 </body>
 
 </html>
