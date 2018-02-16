@@ -103,7 +103,7 @@ window.onload = (function () {
 
         const addTrInView = function (tr) {
             const idToPutTr = count <= 5 ? '#tbodyLeft' : '#tbodyRight';
-            document.querySelector(idToPutTr).innerHTML += tr;
+            $(idToPutTr).innerHTML += tr;
         };
 
         capitals.forEach((capital) => {
@@ -117,11 +117,16 @@ window.onload = (function () {
 
     /*--  SEARCH HANDLER --*/
 
-    document.querySelector('.form').addEventListener('submit', handleSubmitSearch);
+    $('.form').addEventListener('submit', handleSubmitSearch);
+    $('.card__time__close').addEventListener('click', handleClickClosebutton);
 
     function handleSubmitSearch(e) {
         e.preventDefault();
-        const valueInputSearch = document.querySelector('.form__search-city').value;
+        const valueInputSearch = $('.form__search-city').value;
         _searchCapital(valueInputSearch);
+    }
+
+    function handleClickClosebutton(e) {
+        $('.card__time').classList.add('display--none');
     }
 })();
