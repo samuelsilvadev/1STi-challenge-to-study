@@ -236,11 +236,22 @@ html {
     .form__search-city {
         width: 80%;
     }
+    .section__capitals {
+        padding-left: 5em;
+        padding-right: 0;
+    }
+    .capitals {
+        width: 100%;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 1224px) {
     .section__capitals {
         padding-left: 1.5rem;
+        padding-right: 0;
+    }
+    .capitals {
+        width: 100%;
     }
     .card__time {
         width: 100%;
