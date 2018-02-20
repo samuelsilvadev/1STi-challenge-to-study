@@ -9,11 +9,14 @@ html {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to top, rgb(255, 179, 0), rgb(255, 132, 0));
     height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
 .main {
     width: 50%;
+    height: auto;
+    min-height: 100vh;    
     margin: 0 auto;
 }
 
@@ -47,6 +50,10 @@ html {
         font-size: 0.9rem;
         width: 100%;
         margin-bottom: 1rem;
+
+        & ~ span {
+            cursor: pointer;
+        }
     }
     &__forecast {
         font-size: 2.5rem;
@@ -150,8 +157,7 @@ html {
                 position: relative;
                 top: 5px;
             }
-        }
-        &__up {}
+        }        
     }
     &__x {
         &:before {
@@ -230,8 +236,7 @@ html {
         overflow: auto;
     }
     .main {
-        width: 90%;
-        overflow: auto;
+        width: 90%;        
     }
     .form__search-city {
         width: 80%;
@@ -255,5 +260,11 @@ html {
     }
     .card__time {
         width: 100%;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    html {
+        overflow: auto;
     }
 }
