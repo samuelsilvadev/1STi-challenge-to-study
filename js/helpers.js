@@ -7,10 +7,7 @@ function $(element) {
 };
 
 function toJson(data) {
-    return data.json().then(json => {
-        console.log(json);
-        return json;
-    });
+    return data.json().then(json => json);
 };
 
 function fahrenheitToCelsius(temperature) {
