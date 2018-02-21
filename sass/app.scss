@@ -39,7 +39,6 @@ html {
     width: 70%;
     height: 237px;
     padding: 1rem;
-    padding-left: 2.8rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -77,9 +76,7 @@ html {
             font-weight: bold;
         }
     }
-    &__separator {
-        position: relative;
-        left: -1rem;
+    &__separator {        
         border-color: #ff8500;
     }
 }
@@ -223,9 +220,7 @@ html {
         width: 100%;
     }
     .card__time {
-        width: 112%;
-        position: relative;
-        left: -18px;
+        width: 100%;
     }
 }
 
