@@ -222,9 +222,12 @@ html {
     }
     .card__time {
         width: 100%;
+        &__options {
+            margin-top: 3rem;
+        }
         &__days>div {
             width: 25%;
-            font-size: 1 rem;
+            font-size: 1rem;
             &:nth-child(5) {
                 display: none;
             }
@@ -241,6 +244,7 @@ html {
     .main {
         width: 90%;
     }
+    .card__time,
     .form__search-city {
         width: 80%;
     }
